@@ -6,6 +6,21 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+/* Logo Styling */
+.logo-img{
+    border-radius: 7px; 
+}
+
+@media screen and (max-width: 768px) {
+    .logo-img{
+        width: 100px;
+        height: auto;
+    }
+}
+
+
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
