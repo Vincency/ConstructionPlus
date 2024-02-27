@@ -22537,7 +22537,7 @@ a.next-post {
 .subscribe-content-right {
     background: url(../images/g14.jpg) no-repeat center;
     -ms-background-size: cover;
-    background-size: cover;
+    background-size: cover ;
     z-index: 0;
     position: relative;
     display: grid;
