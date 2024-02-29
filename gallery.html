@@ -15,13 +15,104 @@
 
     <style>
         #img{
-            filter: brightness(140%);
+            filter: brightness(100%);
             border-radius: 15px;
         }
 
         .image-description{
             text-align: center;
         }
+
+        .gallery-display{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .gallery-image{
+            /* height: 400px;
+            width: 450px; */
+            height: 300px;
+            width: 350px;
+            
+            margin: 20px 20px 10px;
+            border-radius: 10px;
+        }
+
+        .h2{
+            padding: 0 50px;
+            color: #ff7300;
+            padding: 15px;
+            border: 2px solid #ff7300;
+            border-radius: 10px;
+        }
+
+
+        .h3{
+            color: #daa520;
+        }
+        .h4{
+            color: #ffc125;
+        }
+        .h5{
+            color: #ffdf00;
+        }
+        .h6{
+            color: #eac117;
+        }
+        .h7{
+            color: #ffdb58;
+        }
+
+
+
+        .gallery-image-2{
+            /* height: 380px;
+            width: 590px; */
+            height: 300px;
+            width: 520px;
+            margin: 20px 20px;
+            border-radius: 8px;
+        }
+
+        .gallery-display2{ 
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding:  10px;
+            margin-bottom: 100px;
+        }
+
+        .section-2{
+            text-align: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .gallery-image{
+                /* height: 400px;
+                max-width: 450px; */
+                height: 300px;
+                width: 380px;
+            }
+
+            .h2{
+                padding: 10px;
+            }
+
+            .gallery-display2{
+                flex-direction: column;
+            } 
+
+            .gallery-image-2{
+                height: 250px;
+                width: 380px;
+            }
+        }
+
     </style>
 
 </head>
@@ -161,7 +252,7 @@
 
 
     <section class="w3l-gallery" id="gallery">
-        <div class="destionation-innf py-5">
+        <div class="destionation-innf pt-5">
             <div class="container py-lg-5 py-md-4 py-2 HomePageGallery">
                 <div class="title-content text-center">
                     <h6 class="title-subw3hny text-center">Gallery</h6>
@@ -174,74 +265,6 @@
                 <ul class="gallery_agile">
                     <li>
                         <div class=" w3_agile_portfolio_grid" >
-                            <a href="assets/images/Property after Renovation and Extension.jpg">
-                                <img src="assets/images/Property after Renovation and Extension.jpg" alt=" " class="img-fluid radius-image" style="width: 400px; height: 300px" id="img"/>
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3><i class="fas fa-search-plus"></i></h3>
-                                    </div>
-                                </div>
-                            </a>                    
-                        </div>
-                        <p class="image-description mt-2 mb-3">Property after Renovation and Extension.</p>
-                    </li>
-                    <li>
-                        <div class=" w3_agile_portfolio_grid" >
-                            <a href="assets/images/Property after Renovation and Extension 2.jpg">
-                                <img src="assets/images/Property after Renovation and Extension 2.jpg" alt=" " class="img-fluid radius-image" style="width: 400px; height: 300px"  id="img" />
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3><i class="fas fa-search-plus"></i></h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <p class="image-description mt-2 mb-3">Property after Renovation and Extension.</p>
-                    </li>
-                    <li>
-                        <div class=" w3_agile_portfolio_grid" >
-                            <a href="assets/images/Property after Renovation and Extension 3.jpg">
-                                <img src="assets/images/Property after Renovation and Extension 3.jpg" alt=" " class="img-fluid radius-image" style="width: 400px; height: 300px" id="img"/>
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3><i class="fas fa-search-plus"></i></h3>
-                                    </div>
-                                </div>
-                            </a>
-                        
-                        </div>
-                        <p class="image-description mt-2 mb-3">Property after Renovation and Extension.</p>
-                    </li>
-                    <li>
-                        <div class=" w3_agile_portfolio_grid" >
-                            <a href="assets/images/Property after Renovation and Extension 4.jpg">
-                                <img src="assets/images/Property after Renovation and Extension 4.jpg" alt=" " class="img-fluid radius-image" style="width: 400px; height: 300px" id="img"/>
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3><i class="fas fa-search-plus"></i></h3>
-                                    </div>
-                                </div>
-                            </a>
-                        
-                        </div>
-                        <p class="image-description mt-2 mb-3">Property after Renovation and Extension (Front Drive)</p>
-                    </li>
-                    <li>
-                        <div class=" w3_agile_portfolio_grid" >
-                            <a href="assets/images/Back of property before.jpg">
-                                <img src="assets/images/Back of property before.jpg" alt=" " class="img-fluid radius-image" style="width: 400px; height: 300px" id="img"/>
-                                <div class="w3layouts_news_grid_pos">
-                                    <div class="wthree_text">
-                                        <h3><i class="fas fa-search-plus"></i></h3>
-                                    </div>
-                                </div>
-                            </a>
-                        
-                        </div>
-                        <p class="image-description mt-2 mb-3">Back of property before renovation and extension </p>
-                    </li>
-                    <li>
-                        <div class="w3_agile_portfolio_grid">
                             <a href="assets/images/Bathroom Before.jpg">
                                 <img src="assets/images/Bathroom Before.jpg" alt=" " class="img-fluid radius-image" style="width: 400px; height: 300px" id="img"/>
                                 <div class="w3layouts_news_grid_pos">
@@ -249,9 +272,36 @@
                                         <h3><i class="fas fa-search-plus"></i></h3>
                                     </div>
                                 </div>
+                            </a>                    
+                        </div>
+                        <p class="image-description mt-2 mb-3">Bathroom Before Renovation</p>
+                    </li>
+                    <li>
+                        <div class=" w3_agile_portfolio_grid" >
+                            <a href="assets/images/Bathroom after.jpg">
+                                <img src="assets/images/Bathroom after.jpg" alt=" " class="img-fluid radius-image" style="width: 400px; height: 300px"  id="img" />
+                                <div class="w3layouts_news_grid_pos">
+                                    <div class="wthree_text">
+                                        <h3><i class="fas fa-search-plus"></i></h3>
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                        <p class="image-description mt-2 mb-3">Bathroom Before Renovation and Extension. (Interior View)</p>
+                        <p class="image-description mt-2 mb-3">Bathroom After Renovation</p>
+                    </li>
+                    <li>
+                        <div class=" w3_agile_portfolio_grid" >
+                            <a href="assets/images/Bathroom after 2.jpg.jpg">
+                                <img src="assets/images/Bathroom after 2.jpg" alt=" " class="img-fluid radius-image" style="width: 400px; height: 300px" id="img"/>
+                                <div class="w3layouts_news_grid_pos">
+                                    <div class="wthree_text">
+                                        <h3><i class="fas fa-search-plus"></i></h3>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                        </div>
+                        <p class="image-description mt-2 mb-3">Bathroom After Renovation</p>
                     </li>
                     
                     <li>
@@ -340,8 +390,81 @@
                     
                 </ul>
                 <!--//grids-grids-->
+                
             </div>
         </div>
+
+        <div class="section-2">
+    
+            <h2 class=" my-5 mx-2 mb-3 text-center h2">External Insulation and Render projects Gravesend Kent</h2>
+            <div class="gallery-display">
+                
+                <div>
+                    <a href="assets/images/External Insulation and Render projects Gravesend Kent Before.jpg">
+                        <img src="assets/images/External Insulation and Render projects Gravesend Kent Before.jpg" alt="" class="gallery-image">
+                    </a>
+                    <p class="description">External Insulation and  Render (Before)</p>
+                </div>
+    
+                <div>
+                    <a href="assets/images/External Insulation and Render.jpg">
+                        <img src="assets/images/External Insulation and Render.jpg" alt="" class="gallery-image">
+                    </a>
+                    <p class="description">External Insulation and  Render (During)</p>
+                </div>
+    
+                <div>
+                    <a href="assets/images/External Insulation and Render during 2.jpg">
+                        <img src="assets/images/External Insulation and Render during 2.jpg" alt="" class="gallery-image">
+                    </a>
+                    <p class="description">External Insulation and  Render (Near completion)</p>
+                </div>
+    
+                <div>
+                    <a href="assets/images/External Insulation and  Render Completed.jpg">
+                        <img src="assets/images/External Insulation and  Render Completed.jpg" alt="" class="gallery-image">
+                    </a>
+                    <p class="description">External Insulation and  Render (Completed)</p>
+                </div>
+            </div>
+    
+            <h2 class=" my-5 mx-2 mb-3 text-center h2">Three Bedroom Semi-detached House: Auction, Renovation and Home Extension</h2>
+            <div class="gallery-display2">
+                <div>
+                    <a href="assets/images/Back of property before.jpg">
+                        <img src="assets/images/Back of property before.jpg" alt="" class="gallery-image-2">
+                    </a>
+                    <p class="image-description">Before (Back of property)</p>
+                </div>
+                
+                <div>
+                    <a href="assets/images/Property after Renovation and Extension 4.jpg">
+                        <img src="assets/images/Property after Renovation and Extension 4.jpg" alt="" class="gallery-image-2">
+                    </a>
+                    <p class="image-description">After Property Renovation and Extension</p>
+                </div>
+    
+                <div>
+                    <a href="assets/images/g13-2.jpg">
+                        <img src="assets/images/g13-2.jpg" alt="" class="gallery-image-2">
+                    </a>
+                    <p class="image-description">After Renovation and Extension</p>
+                </div>
+                
+                <div>
+                    <a href="assets/images/Property after Renovation and Extension 3.jpg">
+                        <img src="assets/images/Property after Renovation and Extension 3.jpg" alt="" class="gallery-image-2">
+                    </a>
+                    <p class="image-description">After Renovation and Extension (Interior)</p>
+                </div>
+    
+            </div>
+
+        </div>
+        
+           
+        
+
     </section>
 
 
