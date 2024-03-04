@@ -20581,6 +20581,8 @@ p.abinfo-para {
 
 .about-img{
     margin-left: 100px;
+    height: 550px;
+    width: 400px;
 }
 
 @media screen and (max-width: 768px) {
