@@ -20579,6 +20579,17 @@ p.abinfo-para {
     background-size: cover;
 }
 
+
+.about-img{
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-img{
+        margin-left: 0;
+    }
+}
+
 .w3l-services .about-col {
     background: var(--bg-color);
     border-radius: 0 0 4px 4px;
