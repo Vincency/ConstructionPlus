@@ -99,6 +99,15 @@
                             <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                More <i class="fas fa-caret-down"></i>
+                            </a>
+                            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="privacy_policy.html">Privacy</a>
+                                <a class="dropdown-item" href="terms_&_c.html">Terms</a>
+                            </div>
+                        </li>
                     </ul>
                     <!--/search-right-->
                     <ul class="header-search mx-lg-4">
@@ -758,6 +767,24 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
 
+    <!-- Nav menu More -->
+
+    <script>
+        // Toggle dropdown menu
+    $('.dropdown-toggle').on('click', function(e) {
+        var $el = $(this).next('.dropdown-menu');
+        $('.dropdown-menu').not($el).hide();
+        $el.toggle();
+        e.stopPropagation();
+    });
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.dropdown-toggle').length) {
+            $('.dropdown-menu').hide();
+        }
+    });
+
+    </script>
 </body>
 
 </html>
